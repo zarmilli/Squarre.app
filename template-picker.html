@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select a Template</title>
+  <link rel="stylesheet" href="css/template-picker.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+
+    <!-- BACK BUTTON -->
+    <img src="public/icons/back.svg" class="back-btn" onclick="window.location='create-site.html'">
+
+    <!-- STEP INDICATOR -->
+    <div class="step-indicator">
+      <div class="step">1</div>
+      <div class="line"></div>
+      <div class="step active">2</div>
+    </div>
+
+  </div>
+
+  <!-- PAGE TITLE -->
+  <h1 class="page-title">Choose a Template</h1>
+
+  <!-- CATEGORY CHIPS -->
+  <div class="chip-row">
+    <div class="chip filter-chip active" data-category="all">All</div>
+    <div class="chip filter-chip" data-category="business">Business</div>
+    <div class="chip filter-chip" data-category="ecommerce">Ecommerce</div>
+    <div class="chip filter-chip" data-category="portfolio">Portfolio</div>
+    <div class="chip filter-chip" data-category="landing">Landing Page</div>
+  </div>
+
+  <!-- TEMPLATE GRID -->
+  <div id="template-grid" class="template-grid"></div>
+
+  <!-- Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/template-picker.js"></script>
+
+</body>
+</html>

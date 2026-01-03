@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="public/logo.png" type="image/png" />
+  <title>Squarre – Dashboard</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+
+<body>
+
+<!-- SIDEBAR (STATIC) -->
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <img src="public/logo.png" class="sidebar-logo">
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="tab active"><img class="icon" src="public/icons/overview.svg"><span>Overview</span></a>
+    <a class="tab"><img class="icon" src="public/icons/metrics.svg"><span>Metrics</span></a>
+    <a class="tab"><img class="icon" src="public/icons/subscription.svg"><span>Subscription</span></a>
+    <a class="tab"><img class="icon" src="public/icons/settings.svg"><span>Settings</span></a>
+    <a class="tab"><img class="icon" src="public/icons/profile.svg"><span>Profile</span></a>
+    <a class="tab"><img class="icon" src="public/icons/support.svg"><span>Support</span></a>
+  </nav>
+
+  <div class="logout-wrapper">
+    <button id="logout-btn" class="logout-btn">
+      <img src="public/icons/logout.svg" class="icon">
+      <span>Logout</span>
+    </button>
+  </div>
+</aside>
+
+<!-- MAIN SHELL -->
+<div class="main">
+
+  <!-- HEADER (FLUSH) -->
+  <header class="dashboard-header">
+    <div class="logo">Squarre</div>
+    <div class="header-right">
+      <div id="membership-chip" class="chip">Free</div>
+      <button class="upgrade-btn" onclick="window.location='pricing.html'">Upgrade</button>
+      <div id="user-name" class="user-name">User</div>
+    </div>
+  </header>
+
+  <!-- CONTENT CARD -->
+  <section class="content-card">
+
+    <div class="sites-wrapper">
+
+      <div class="sites-grid">
+        <div class="site-card create-card" onclick="window.location='create-site.html'">
+          <div class="plus">+</div>
+          <p>Create Site</p>
+        </div>
+
+        <div class="site-card ai-card">
+          <div class="ai-title">Build with AI</div>
+          <p class="ai-description">
+            Generate a complete website from a simple prompt.
+            Design, copy and structure, automatically.
+          </p>
+          <button class="coming-soon-btn">Coming soon</button>
+        </div>
+      </div>
+
+      <h2 class="section-title">My Websites</h2>
+      <div id="sites-container" class="sites-grid"></div>
+
+    </div>
+  </section>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Editor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/editor.css" />
+</head>
+<body>
+
+<div class="editor-layout">
+
+  <!-- LEFT PANEL -->
+  <aside class="editor-panel">
+
+    <!-- Header -->
+    <div class="editor-header">
+      <button id="back-btn" class="back-btn">
+        <img src="public/icons/back.svg" alt="Back">
+      </button>
+
+      <span id="site-name" class="site-name">My Site</span>
+    </div>
+
+    <!-- Scrollable accordion area -->
+    <div class="editor-fields" id="editor-fields">
+      <!-- Dynamic accordions injected here -->
+    </div>
+
+  </aside>
+
+  <!-- RIGHT PREVIEW -->
+  <div class="editor-preview">
+
+    <!-- Overlay buttons -->
+    <div class="preview-actions">
+      <button id="save-btn" class="primary-btn">Save</button>
+      <button class="secondary-btn">Publish</button>
+    </div>
+
+    <iframe id="site-preview"></iframe>
+
+  </div>
+
+</div>
+
+<!-- Supabase -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+
+<!-- Editor logic -->
+<script src="js/editor.js"></script>
+
+</body>
+</html>

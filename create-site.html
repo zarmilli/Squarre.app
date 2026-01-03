@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Site – Step 1</title>
+  <link rel="stylesheet" href="css/create.css" />
+</head>
+
+<body>
+
+  <!-- BACK BUTTON -->
+  <a href="dashboard.html" class="back-btn">
+    <img src="public/icons/back.svg" alt="Back" />
+  </a>
+
+  <!-- STEP INDICATOR -->
+  <div class="step-indicator">
+    <div class="step active">1</div>
+    <div class="line"></div>
+    <div class="step">2</div>
+  </div>
+
+  <!-- FORM WRAPPER -->
+  <div class="form-wrapper">
+    <h1>Name your site</h1>
+
+    <form id="create-site-form" class="create-site-form">
+      <input 
+        id="site-name"
+        type="text"
+        placeholder="My Website"
+        required
+      />
+
+      <button type="submit">Continue</button>
+    </form>
+  </div>
+
+  <!-- Supabase CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/create.js"></script>
+</body>
+</html>

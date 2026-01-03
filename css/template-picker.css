@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* TOP BAR */
+.top-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+/* STEP INDICATOR */
+.step-indicator {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 22px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.step {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e5e5e5;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.step.active {
+  background: #bbee62;
+  color: #000;
+}
+
+.line {
+  width: 45px;
+  height: 3px;
+  background: #ccc;
+  border-radius: 2px;
+}
+
+/* TITLE */
+.page-title {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* CATEGORY CHIPS */
+.chip-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.chip {
+  background: #343a40;
+  padding: 6px 14px;
+  color: #eeeeee;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.chip.active {
+  background: #bbee62;
+  color: #000;
+}
+
+/* TEMPLATE GRID */
+.template-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* TEMPLATE CARDS */
+.template-card {
+  background: none;
+  text-align: center;
+  position: relative;
+}
+
+.template-card h3 {
+  margin-bottom: 15px;
+}
+
+.thumbnail-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.template-thumb {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+  background: #fff;
+  max-height: 180px;
+}
+
+/* AVAILABILITY CHIP */
+.availability-chip {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #3b6064;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+/* BUTTONS */
+.btn-row {
+  display: flex;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.primary-btn {
+  flex: 2;
+  background: #bbee62;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  flex: 1;
+  background: #bdbdbd;
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: #3b6064;
+}
+
+.secondary-btn:hover {
+  background: #a6a6a6;
+}

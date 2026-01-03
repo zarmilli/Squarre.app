@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Back button */
+.back-btn {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.back-btn img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+/* Step indicator */
+.step-indicator {
+  position: absolute;
+  top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.step {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e5e5e5;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.step.active {
+  background: #bbee62;
+  color: #000;
+}
+
+.line {
+  width: 45px;
+  height: 3px;
+  background: #ccc;
+  border-radius: 2px;
+}
+
+/* Form */
+.form-wrapper {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.form-wrapper h1 {
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+.create-site-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.create-site-form input {
+  padding: 14px;
+  border-radius: 8px;
+  background-color: #eeeeee;
+  border: none;
+  font-size: 16px;
+}
+
+.create-site-form button {
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #bbee62;
+  font-size: 16px;
+  cursor: pointer;
+}
