@@ -21,7 +21,7 @@
 
 /* Individual card styling */
 .stats-card {
-  background: #022c22;
+  background: #ffffff;
   border-radius: 16px;       /* rounded corners */
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.06);
@@ -150,3 +150,4 @@
 .brand-card.dark-overlay::before {
   background: linear-gradient(to bottom, rgba(0,0,0,0.12), rgba(0,0,0,0.72));
 }
+
