@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   /* ───────── LOAD TEMPLATE ───────── */
   const iframe = document.getElementById("site-preview");
 
-  iframe.src = `${BASE_PATH}/templates/${templateSlug}/index.html`;
+  iframe.src = `${BASE_PATH}/public/templates/${templateSlug}/index.html`;
 
   iframe.onload = async () => {
     const editables = await loadEditables(templateSlug);
@@ -82,7 +82,7 @@ function bindAction(id, fn) {
 /* ───────── LOAD EDITABLES ───────── */
 async function loadEditables(slug) {
   const res = await fetch(
-    `${BASE_PATH}/templates/${slug}/editables.json`
+    `${BASE_PATH}/public/templates/${slug}/editables.json`
   );
 
   if (!res.ok) throw new Error("editables.json not found");
