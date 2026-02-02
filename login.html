@@ -4,16 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="public/logo.png" type="image/png" />
-  <title>Welcome back! Login</title>
+  <title>Welcome back | Squarre</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
   <!-- DESKTOP CONTENT -->
   <div class="container">
+
+    <!-- LEFT / FORM -->
     <div class="signup-left">
       <div class="signup-left-inner">
-        
+
         <div class="auth-logo">
           <img src="public/logo.png" alt="Squarre Logo" class="auth-logo-img">
           <span class="auth-logo-name">Squarre</span>
@@ -23,31 +25,17 @@
 
         <form id="login-form" class="signup-form">
 
-          <input 
-            id="email" 
-            type="email" 
-            placeholder="Email" 
-            required 
-          />
-
-          <input 
-            id="password" 
-            type="password" 
-            placeholder="Password" 
-            required 
-          />
+          <input id="email" type="email" placeholder="Email" required />
+          <input id="password" type="password" placeholder="Password" required />
 
           <button type="submit">Login</button>
 
-          <!-- Signup link -->
           <div class="auth-extra">
             Don’t have an account?
             <a href="signup.html">Sign up</a>
           </div>
 
-          <!-- OR -->
           <div class="divider">OR login with</div>
-
           <button type="button" class="soon-btn">Coming soon</button>
 
         </form>
@@ -55,10 +43,19 @@
       </div>
     </div>
 
-    <!-- RIGHT SIDE IMAGE -->
-    <div class="signup-right">
-      <img src="public/login.jpg" alt="Login Illustration" />
+    <!-- RIGHT / VISUAL -->
+    <div class="signup-right signup-bg">
+      <div class="quote-card">
+        <h2>
+          “Bold decisions create extraordinary futures.”
+        </h2>
+        <p>
+          Logging in means continuing the work you were brave enough to begin.
+          Progress belongs to those who show up.
+        </p>
+      </div>
     </div>
+
   </div>
 
   <!-- MOBILE WARNING -->

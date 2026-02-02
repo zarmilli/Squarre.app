@@ -1,0 +1,192 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: white;
+  color: #111;
+  height: 100dvh;
+}
+
+/* =========================
+   MOBILE WARNING
+========================= */
+
+.mobile-warning {
+  display: none;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 40px;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.container {
+  display: flex;
+  height: 100dvh;
+}
+
+/* LEFT */
+.signup-left {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px;
+}
+
+.signup-left-inner {
+  width: 100%;
+  max-width: 360px;
+}
+
+/* RIGHT */
+.signup-right {
+  width: 60vw;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background image */
+.signup-bg {
+  background: url("../public/login.jpg") center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================
+   GLASS QUOTE CARD
+========================= */
+
+.quote-card {
+  max-width: 420px;
+  padding: 36px;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 18px;
+  color: white;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.quote-card h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.quote-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.auth-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.auth-logo-img {
+  width: 52px;
+  margin-bottom: 0.4rem;
+  border-radius: 6px;
+}
+
+.auth-logo-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.signup-form input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #efefef;
+  font-size: 0.75rem;
+}
+
+.signup-form button {
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #bbee62;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.signup-form button:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* =========================
+   EXTRAS
+========================= */
+
+.auth-extra {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.auth-extra a {
+  color: #9bbd3c;
+  text-decoration: none;
+}
+
+.divider {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.soon-btn {
+  background: #dbe8bc;
+  color: #777;
+  cursor: not-allowed;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .container {
+    display: none;
+  }
+
+  .mobile-warning {
+    display: flex;
+    position: absolute;
+    inset: 0;
+    background: #080808;
+    justify-content: center;
+    align-items: center;
+  }
+}
